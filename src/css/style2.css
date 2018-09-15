@@ -3,3 +3,85 @@
 
 * {margin: 0; padding: 0;}
 
+
+
+
+a:link {text-decoration:none;}
+#mainmenu a:link visited { color: #706A6A;}
+#mainmenu li { display: inline; padding-right: 1.5%; }
+#mainmenu li a:hover {color:#FFFFFF; }
+#mainmenu  a:link { color:#DCD4D4; font-family:"antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+
+	font-size: 1VW;  /* texten är 1.2 gånger större än ursprungliga*/
+	margin-bottom: 5px }
+
+ nav { text-align: center;
+height: 4.7%;
+	width:auto;
+	margin: auto;
+	background-color:#1D1516;
+	
+	padding-top: 2.5%;
+		padding-bottom:2.5%;
+
+}
+
+.smalpictures {
+	width: 60%;
+height: auto;
+	padding-top: 5%;
+	
+}
+
+
+footer {text-align: center;
+font-family:"antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+clear: both;
+width: auto;
+font-size: 1.1vmin;
+margin-bottom: 0.5%;
+padding-top: 2%;
+	height: 15.7%;
+background-color: #1D1516;
+margin-top: 1%;
+color: #CCC6C6;}
+
+
+.footerdiv {
+	
+	height:130px;
+	width: 10.4%;
+	float: left;
+	margin-right: 5%;
+	padding: 10px;
+
+
+}
+
+#copyright { width: 26%;
+margin-bottom: 1%;
+margin-left: 36.4%;}
+
+.footerdiv1 {
+	
+	height:130px;
+	width: 10.4%;
+	float: left;
+	margin-right: 8%;
+	padding: 10px;
+	margin-left: 36.4%;
+
+}
+.adress1 {
+	font-size: 1VW;
+	padding-bottom: 1%;
+
+}
+
+.kontakt {
+	font-size: 1VW;
+	padding-bottom: 1%;
+	font-size: 0.9VW;
+
+}
+

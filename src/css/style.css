@@ -1,9 +1,80 @@
 @charset "utf-8";
 /* CSS Document */
+
 body {
 	
-	background-color:#C39A99;
+	
 	height: auto;
 	
 }
+
+#startbild {
+	
+	height: auto;
+	width:100%;
+}
+
+#omossbild {width: 50%;
+height: auto;
+margin: auto;}
+
+#article1 {  width: 60%;
+padding: 5%;
+margin: auto;
+background-color:#FFFFFF;
+margin-top: 1%;
+height: 80%;}
+
+.omoss { 
+font-size: 1.2VW;
+color:#4F4F4F;
+font-family:   Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 5%;
+}
+
+
+
+h2 {font-family: "alex-brush", arizonia, "euphoria-script", allura, "dancing-script", "serif";
+	font-size: 2.5VW;
+	padding-bottom: 4%;
+	padding-left: 40%;
+	padding-top: 3%;
+
+}
+
+.adress { 
+font-size: 1VW;
+color:#4F4F4F;
+font-family:   Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding-left: 20%;
+	padding-right: 20%;
+	
+}
+
+
+h3 { 
+font-size: 1.2VW;
+color:#474141;
+font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 0.5%;
+	padding-top: 5%;
+	
+}
+
+h4 { 
+font-size: 1.2VW;
+color:#474141;
+font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-top: 2%;
+	padding-bottom: 0.5%;
+		
+	
+}
+
 
