@@ -1,0 +1,54 @@
+/* Scss Document */
+
+* {
+	
+	margin:0;
+	padding:0;
+}
+
+//variabel för lagfring av färg
+$link-color: #706A6A;
+
+
+
+
+
+//inkapsling av menyn
+nav {
+	
+	text-align: center;
+	height: 4.7%;
+	width:auto;
+	margin: auto;
+	background-color:#1D1516;
+	
+	padding-top: 2.5%;
+	padding-bottom:2.5%;
+	
+  ul {
+  
+    list-style: none;
+  }
+
+  li { display: inline;
+	  padding-right: 1.5%;}
+
+  a  {
+    text-decoration: none;
+	  color:#DCD4D4; font-family:"antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+
+	font-size: 1VW;  /* texten är 1.2 gånger större än ursprungliga*/
+	margin-bottom: 5px;
+	}
+	
+	a visited { 
+		color: $link-color;
+		
+		
+	}
+	
+	a hover {
+		color: $link-color;
+	}
+}
+

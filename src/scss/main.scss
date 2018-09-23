@@ -1,0 +1,111 @@
+/* Scss Document */
+
+
+//importerar footer scss
+@import 'footer';
+@import 'nav' ;
+
+//mixin för padding
+@mixin padding (){
+	padding-left: 20%;
+	padding-right: 20%;
+}
+
+//mixin för padding och text-storlek
+@mixin paddingandsize (){
+	padding-bottom: 0.5%;
+	font-size: 1.2VW;
+}
+
+
+
+.omoss { 
+padding-bottom: 5%;
+font-size: 1.2VW;
+color:#4F4F4F;
+font-family:   Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+@include padding (); 
+	
+
+}
+
+
+.adress { 
+font-size: 1VW;
+color:#4F4F4F;
+font-family:   Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+@include padding (); 
+	
+}
+
+
+h3 { 
+color:#474141;
+font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+padding-top: 5%;
+@include padding (); 
+@include paddingandsize ();
+}
+
+h4 { 
+color:#474141;
+font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+padding-top: 2%;
+@include padding (); 	
+@include paddingandsize ();
+}
+
+
+
+#startbild {
+	width: 100%;
+height: auto;
+
+	
+}
+
+
+
+.adress1 {
+	font-size: 1VW;
+	padding-bottom: 1%;
+
+}
+
+.kontakt {
+	
+	@extend .adress1;
+	font-size: 0.9VW;
+
+}
+
+
+body {
+	
+	
+	height: auto;
+	
+}
+
+
+#omossbild {width: 50%;
+height: auto;
+margin: auto;}
+
+#article1 {  width: 60%;
+padding: 5%;
+margin: auto;
+background-color:#FFFFFF;
+margin-top: 1%;
+height: 80%;}
+
+
+
+h2 {font-family: "alex-brush", arizonia, "euphoria-script", allura, "dancing-script", "serif";
+	font-size: 2.5VW;
+	padding-bottom: 4%;
+	padding-left: 40%;
+	padding-top: 3%;
+
+}
+

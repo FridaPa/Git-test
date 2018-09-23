@@ -4,6 +4,7 @@ const uglify = require("gulp-uglify");
 const cleanCSS = require("gulp-clean-css");
 const watch = require("gulp-watch");
 const livereload = require('gulp-livereload');
+const sass = require('gulp-sass');
 
 /*installerat en reload men inte gjort ngt med den än */
 /*inkluderar gulp och plugins fr node_modules*/
@@ -45,13 +46,15 @@ gulp.task("convertjs", function(){
 
 //samma sak med css
 gulp.task("convertcss", function(){
-	return gulp.src("src/css/*.css")
+	return gulp.src('src/scss/*.scss')
+    .pipe(sass().on('error', sass.logError))
 	//döper filen till main.min.css miniminerad
 	.pipe(concat("main.min.css"))
 	.pipe(cleanCSS())
 	.pipe(gulp.dest("Pub/Git-test/css"))
 	.pipe(livereload());
 });
+
 
 
 
@@ -68,7 +71,8 @@ gulp.task("watcher", function(){
 		
 	});
 	
-	watch("src/css/*.css", function(){
+	
+	watch("src/scss/*.scss", function(){
 		gulp.start("convertcss");
 		
 		
@@ -79,6 +83,9 @@ gulp.task("watcher", function(){
 		
 		
 	});
+	
+	
+	
 	
 });
 

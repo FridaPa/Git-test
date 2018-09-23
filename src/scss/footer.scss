@@ -1,0 +1,48 @@
+/* Scss Document */
+
+
+//variabel med teckensnitt
+$font-text: "antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+
+
+
+//nestning/inkapsling av footer
+footer { font: 100%$font-text;
+	text-align: center;
+clear: both;
+width: auto;
+font-size: 1.3vmin;
+margin-bottom: 0.5%;
+padding-top: 2%;
+	height: 15.7%;
+background-color:#1D1516;// darken som ger 11% mörjare nyans
+margin-top: 2%;
+color:#D3D3D3;
+
+.footerdiv {
+	
+	height:130px;
+	width: 10.4%;
+	float: left;
+	margin-right: 6%;
+	padding: 10px;
+	
+	
+	}
+
+.footerdiv1 {
+	
+	//kör en extend från ovan 
+	@extend .footerdiv;
+	margin-left: 36.4%;
+	
+	}
+
+	
+#copyright { width: 26%;
+margin-bottom: 1%;
+margin-left: 36.4%;
+	
+	}
+	
+}
