@@ -3,46 +3,58 @@
 
 //variabel med teckensnitt
 $font-text: "antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
-
+//variabel för padding
+$padding: 20px;
+//Variabel för bakgrundsfärg
+$footer-color: if(true, #1D1516, black);
 
 
 //nestning/inkapsling av footer
-footer { font: 100%$font-text;
+footer { 
+	font: 100%$font-text;
 	text-align: center;
-clear: both;
-width: auto;
-font-size: 1.3vmin;
-margin-bottom: 0.5%;
-padding-top: 2%;
+	clear: both;
+	width: auto;
+	font-size: 1.3vmin;
+	margin-bottom: 0.5%;
+	padding-top: 2%;
 	height: 15.7%;
-background-color:#1D1516;// darken som ger 11% mörjare nyans
-margin-top: 2%;
-color:#D3D3D3;
-
-.footerdiv {
+	background-color:$footer-color;
+	margin-top: 2%;
+	color:#D3D3D3;
 	
-	height:130px;
-	width: 10.4%;
-	float: left;
-	margin-right: 6%;
-	padding: 10px;
+	//om ljusheten är större än 75% vill jag ha en mörkjare nyans på texten, annars ljusare
+	@if (lightness($footer-color) > 75%) {
+      color:#161616;
+    } @else {
+      color: #D3D3D3;
+   }
 	
 	
+	.footerdiv {
+		height:130px;
+		width: 10.4%;
+		float: left;
+		margin-right: 6%;
+		//if/else sats
+		@if($padding <= 5px) {
+			padding: $padding;
+		} @else {
+			padding: $padding / 2;
+		}
 	}
-
-.footerdiv1 {
 	
-	//kör en extend från ovan 
-	@extend .footerdiv;
-	margin-left: 36.4%;
+	.footerdiv1 {
 	
+	    //kör en extend från ovan 
+		@extend .footerdiv;
+		margin-left: 36.4%;
 	}
-
 	
-#copyright { width: 26%;
-margin-bottom: 1%;
-margin-left: 36.4%;
-	
+	#copyright {
+		width: 26%;
+		margin-bottom: 1%;
+		margin-left: 36.4%;
 	}
 	
 }
